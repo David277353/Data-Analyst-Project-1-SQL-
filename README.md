@@ -46,17 +46,10 @@ This project works through those questions systematically using BigQuery SQL on 
 
 ## ✨ Key Technical Highlights
 
-**Cumulative Revenue Tracking**
-Used `SUM() OVER (ORDER BY week)` window functions to track business pacing over time — showing not just weekly revenue but how the business was trending toward its period target.
-
-**Co-Purchase / Product Affinity Analysis**
-Identified which products are most frequently bought alongside the "YouTube Men's Vintage Henley" — directly actionable for product bundling and cross-sell campaign strategy.
-
-**UNNEST on Nested Arrays**
-The GA360 schema stores hits and product data as repeated nested fields. Used `UNNEST()` to flatten these into queryable rows — a technique essential for working with real-world event-based datasets.
-
-**Multiple Approaches Per Query**
-Each query includes alternative implementations (CTE vs subquery vs window function) with inline notes on trade-offs — demonstrating not just what works, but *why* one approach is preferred over another.
+- **Cumulative Revenue Tracking** using `SUM() OVER (ORDER BY week)` window functions to monitor business pacing over time. Tracked revenue across 14 weeks (May–Jul 2017), reaching **$240K+ in cumulative revenue** by the end of the period.
+- **Co-purchase / Product Affinity Analysis** to identify cross-selling opportunities for product bundling strategies. Among customers who purchased the "YouTube Men's Vintage Henley," **Google Sunglasses** was the top co-purchased item (20 units — nearly 3x the next closest product), surfacing a concrete bundling recommendation for marketing.
+- **UNNEST operations** on nested `hits` and `product` arrays within the BigQuery GA schema to handle complex repeated fields.
+- Multiple approaches shown per query (CTE, subquery, window functions) with inline notes on trade-offs and best practices.
 
 ---
 
