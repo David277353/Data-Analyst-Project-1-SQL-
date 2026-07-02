@@ -92,11 +92,10 @@ Each query includes alternative implementations (CTE vs subquery vs window funct
 
 ```
 ecommerce-analytics-bigquery/
-├── DAC_K45_-_Khoa_Tran.sql   # All queries with explanations and alternative approaches
+├── E-Commerce-SQL-Queries-KhoaTran  
 └── README.md
 ```
 
-> 💡 **Tip:** Rename the .sql file to `ecommerce-analysis-queries.sql` before uploading — it reads more professionally than a course submission filename.
 
 ---
 
